@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Input Group</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+<div class="container">
+    <form action="">
+        <label for="email">Email:</label>
+        <div class="input-group input-group-lg mb-3">
+            <input type="text" id="email" class="form-control" placeholder="Username">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Domain">
+            <button class="btn btn-primary">Check Email</button>
+        </div>
+
+        <label for="hobby" class="form-label">Hobby</label>
+        <div class="input-group input-group-lg">
+            <div class="input-group-text">
+                <input type="checkbox" class="form-check-inline">
+            </div>
+            <input type="text" id="hobby" name="hobby" class="form-control">
+            <span class="input-group-text">Contoh</span>
+        </div>
+
+        <label for="contoh" class="form-label">Contoh:</label>
+        <div class="input-group">
+            <button class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            <input type="text" name="contoh" id="contoh" class="form-control">
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Options</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+    </form>
+</div>
+
+<script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>

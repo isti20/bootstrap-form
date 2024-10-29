@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Control</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Login</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form action="">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username:</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Email atau Nomor Telepon" name="username" id="username">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" class="form-control form-control-lg" name="password" id="password">
+                    <div class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="profile" class="form-label">Profile:</label>
+                    <input type="file" class="form-control form-control-lg" name="profile" id="profile">
+                </div>
+                <div class="mb-3">
+                    <label for="color" class="form-label">Favorite Color:</label>
+                    <input type="color" class="form-control form-control-lg form-control-color" name="color" id="color">
+                </div>
+                <div class="mb-3">
+                    <label for="food" class="form-label">Favorite Food:</label>
+                    <input class="form-control" list="foodList" id="food" placeholder="Type to search...">
+                    <datalist id="foodList">
+                        <option value="Nasi Goreng">
+                        <option value="Ayam Goreng">
+                        <option value="Sayur Asem">
+                    </datalist>
+                </div>
+                <div class="mb-3 text-end">
+                    <button class="btn btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

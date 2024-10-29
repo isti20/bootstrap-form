@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Validation</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+<div class="container">
+    <form action="" class="row">
+        <div class="col-12">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" id="username" class="form-control is-invalid">
+            <div class="invalid-feedback">
+                Username tidak boleh kosong
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" class="form-control is-valid">
+            <div class="valid-feedback">
+                Nama sudah benar
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
